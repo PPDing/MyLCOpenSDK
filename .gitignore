@@ -97,3 +97,4 @@ LeChangeNewDemo/Depend/Frameworks/iOS/LCAddDeviceModule.framework/Modules/LCAddD
 LeChangeNewDemo/Depend/Frameworks/iOS/LCAddDeviceModule.framework/LCAddDeviceModule
 LeChangeNewDemo/Depend/Frameworks/iOS/LCAddDeviceModuleBundle.bundle
 LeChangeNewDemo/Pods
+.swiftpm/
