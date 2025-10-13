@@ -10,6 +10,12 @@ let package = Package(
             targets: ["LCOpenSDKDynamic"]
         ),
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/PPDing/MyLCOpenSDK.git",
+            branch: "spm-compatible"
+        )
+    ],
     targets: [
         .binaryTarget(
             name: "LCOpenSDKDynamic",
