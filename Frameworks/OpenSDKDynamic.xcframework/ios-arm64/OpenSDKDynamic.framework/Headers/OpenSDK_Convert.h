@@ -8,7 +8,7 @@
 #ifndef OpenSDK_Convert_h
 #define OpenSDK_Convert_h
 
-#import <OpenSDK_Define.h>
+#import "OpenSDK_Define.h"
 #import <Foundation/Foundation.h>
 
 @protocol OpenSDK_ConvertListener;
