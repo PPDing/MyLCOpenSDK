@@ -10,7 +10,6 @@ let package = Package(
         .library(
             name: "MyOpenSDK",
             targets: [
-                "MyOpenSDK",
                 "LCOpenApiClientDynamic",
                 "OpenSDKDynamic",
                 "RtspStreamFrameworkDynamicGeneral",
@@ -33,12 +32,6 @@ let package = Package(
                 "HlsStreamFrameworkDynamicGeneral",
                 "NetConfig",
                 "Bluetooth"
-            ],
-            path: "Sources/MyOpenSDK",
-            publicHeadersPath: "Include",
-            cSettings: [
-                .headerSearchPath("../"),
-                .define("SPM_INTEGRATION")
             ]
         ),
         
