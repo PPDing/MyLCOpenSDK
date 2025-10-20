@@ -16,7 +16,7 @@ let package = Package(
                 "DHHTTPStreamDynamicGeneral",
                 "HlsStreamFrameworkDynamicGeneral",
                 "NetConfig",
-                "Bluetooth"
+                "BluetoothConfig"
             ]
         ),
     ],
@@ -52,15 +52,9 @@ let package = Package(
             path: "Frameworks/NetConfig.xcframework"
         ),
         
-        .target(
-            name: "Bluetooth",
-            dependencies: [],
-            path: "Sources/Bluetooth",
-            sources: ["dummy.m"],
-            publicHeadersPath: "Include",
-            linkerSettings: [
-                .linkedLibrary("bluetoothconfig")
-            ]
+        .binaryTarget(
+            name: "BluetoothConfig",
+            path: "Frameworks/BluetoothConfig.xcframework"
         )
     ]
 )
