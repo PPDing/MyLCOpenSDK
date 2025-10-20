@@ -22,19 +22,6 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "MyOpenSDK",
-            dependencies: [
-                "LCOpenApiClientDynamic",
-                "OpenSDKDynamic",
-                "RtspStreamFrameworkDynamicGeneral",
-                "DHHTTPStreamDynamicGeneral",
-                "HlsStreamFrameworkDynamicGeneral",
-                "NetConfig",
-                "Bluetooth"
-            ]
-        ),
-        
         .binaryTarget(
             name: "LCOpenApiClientDynamic",
             path: "Frameworks/LCOpenApiClientDynamic.xcframework"
@@ -72,8 +59,7 @@ let package = Package(
             sources: ["dummy.m"],
             publicHeadersPath: "Include",
             linkerSettings: [
-                .linkedLibrary("bluetoothconfig"),
-                .unsafeFlags(["-LSources/Bluetooth/Lib"])
+                .linkedLibrary("bluetoothconfig")
             ]
         )
     ]
