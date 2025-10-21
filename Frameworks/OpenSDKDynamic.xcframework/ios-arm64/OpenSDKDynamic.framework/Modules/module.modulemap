@@ -1,5 +1,5 @@
 framework module OpenSDKDynamic {
-  umbrella header "LCOpenSDK_dynamic.h"
+  umbrella header "OpenSDK_dynamic.h"
 
   export *
   module * { export * }
