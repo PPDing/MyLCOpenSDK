@@ -15,8 +15,7 @@ let package = Package(
                 "RtspStreamFrameworkDynamicGeneral",
                 "DHHTTPStreamDynamicGeneral",
                 "HlsStreamFrameworkDynamicGeneral",
-                "NetConfig",
-                "BluetoothConfig"
+                "NetConfig"
             ]
         ),
     ],
@@ -50,11 +49,6 @@ let package = Package(
         .binaryTarget(
             name: "NetConfig",
             path: "Frameworks/NetConfig.xcframework"
-        ),
-        
-        .binaryTarget(
-            name: "BluetoothConfig",
-            path: "Frameworks/BluetoothConfig.xcframework"
         )
     ]
 )
