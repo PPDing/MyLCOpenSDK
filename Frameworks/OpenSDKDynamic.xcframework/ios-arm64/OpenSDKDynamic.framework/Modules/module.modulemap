@@ -2,5 +2,23 @@ framework module OpenSDKDynamic {
   umbrella header "OpenSDK_dynamic.h"
 
   export *
-  module * { export * }
+  header "OpenSDK_Api.h"
+  header "OpenSDK_AudioTalk.h"
+  header "OpenSDK_ConfigWifi.h"
+  header "OpenSDK_Convert.h"
+  header "OpenSDK_ConvertListener.h"
+  header "OpenSDK_Define.h"
+  header "OpenSDK_DeviceInit.h"
+  header "OpenSDK_Download.h"
+  header "OpenSDK_DownloadListener.h"
+  header "OpenSDK_EventListener.h"
+  header "OpenSDK_LoginManager.h"
+  header "OpenSDK_LoginManagerListener.h"
+  header "OpenSDK_LoginManagerNetSDKInterface.h"
+  header "OpenSDK_OSDInfo.h"
+  header "OpenSDK_Params.h"
+  header "OpenSDK_PlayWindow.h"
+  header "OpenSDK_RestApiParameter.h"
+  header "OpenSDK_TalkerListener.h"
+  header "OpenSDK_Utils.h"
 }
