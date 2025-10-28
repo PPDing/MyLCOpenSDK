@@ -25,7 +25,7 @@ namespace LCOpenApi {
         virtual int build() = 0;
         LCOpenApiRequest() : isUseKeepAlive(0)
         , accessSource("lc")
-        , uriPrefix("")
+        , uriPrefix("/openapi/")
         , protoType(-1)
         , index(0)
         , priority(1)

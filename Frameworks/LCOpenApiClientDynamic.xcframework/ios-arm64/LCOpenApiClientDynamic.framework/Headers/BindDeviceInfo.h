@@ -75,6 +75,12 @@ namespace LCOpenApi{
 			/** 设备基线类型，详见华视微讯设备协议 */
 			string baseline;
 		public:
+			/** 绑定设备的appId（若为乐橙App绑定，该字段为空字符串） */
+			string appId;
+		public:
+			/** 设备型号 */
+			string deviceModel;
+		public:
 			/** define a list with struct of BindDeviceInfoResponseData_ChannelsElement */
 			class BindDeviceInfoResponseData_ChannelsElement : public LCOpenApiBase
 			{
@@ -84,9 +90,6 @@ namespace LCOpenApi{
 			public:
 				/** [int]报警布撤防状态，0-撤防，1-布防 */
 				int alarmStatus;
-			public:
-				/** [int]云存储状态：-1-未开通 0-已失效 1-使用中 2-套餐暂停 */
-				int csStatus;
 			public:
 				/** 通道名称 */
 				string channelName;
@@ -106,20 +109,11 @@ namespace LCOpenApi{
 				/** [bool]是否在线 */
 				bool channelOnline;
 			public:
-				/** [String]可选,通道维度一键撤防状态开关,on-开启;off-关闭 */
-				string instantDisAlarmStatus;
+				/** [int]云存储状态：-1-未开通 0-已失效 1-使用中 2-套餐暂停 */
+				int csStatus;
 			};
 		public:
 			LCOpenApiVector<BindDeviceInfoResponseData_ChannelsElement> channels;
-		public:
-			/** 绑定设备的appId（若为乐橙App绑定，该字段为空字符串） */
-			string appId;
-		public:
-			/** 设备型号 */
-			string deviceModel;
-		public:
-			/** [bool]是否有新版本可以升级 */
-			bool canBeUpgrade;
 		public:
 			/** 设备名称 */
 			string name;
@@ -130,14 +124,14 @@ namespace LCOpenApi{
 			/** [int]总的视频通道数，包含未接入的通道 */
 			int channelNum;
 		public:
-			/** [O]设备能力项，逗号隔开，如AlarmMD,AudioTalk,AlarmPIR,WLAN,VVP2P，详见乐橙开放平台设备协议 */
-			string ability;
+			/** [bool]是否有新版本可以升级 */
+			bool canBeUpgrade;
 		public:
 			/** 设备软件版本号 */
 			string version;
 		public:
-			/** [String]可选,设备维度一键撤防状态开关,on-开启;off-关闭 */
-			string instantDisAlarmStatus;
+			/** [O]设备能力项，逗号隔开，如AlarmMD,AudioTalk,AlarmPIR,WLAN,VVP2P，详见乐橙开放平台设备协议 */
+			string ability;
 		public:
 			/** [int]当前状态：0-离线，1-在线，3-升级中 */
 			int status;

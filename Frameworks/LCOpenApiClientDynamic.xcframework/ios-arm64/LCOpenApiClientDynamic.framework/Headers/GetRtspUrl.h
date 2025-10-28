@@ -42,9 +42,6 @@ namespace LCOpenApi{
 			/** [String]设备级对讲与通道级对讲类型区分，device：表示设备级对讲，channel：表示通道级对讲 */
 			string deviceType;
 		public:
-			/** [String]对讲类型 */
-			string talkType;
-		public:
 			/** [String]是否跳过回环认证：true-跳过, false-不跳过（针对APP自己走P2P校验过的，跳过校验优化）；无该字段时，国内海外按老逻辑处理 */
 			string skipAuth;
 		public:

@@ -89,6 +89,12 @@ namespace LCOpenApi{
 			/** 37777 */
 			string port;
 		public:
+			/** exist */
+			string deviceExist;
+		public:
+			/** online */
+			string status;
+		public:
 			/** define a list with struct of UnBindDeviceInfoResponseData_DeviceModelImages */
 			class UnBindDeviceInfoResponseData_DeviceModelImages : public LCOpenApiBase
 			{
@@ -113,15 +119,6 @@ namespace LCOpenApi{
 			};
 		public:
 			UnBindDeviceInfoResponseData_DeviceModelImages* deviceModelImages;
-		public:
-			/** exist */
-			string deviceExist;
-		public:
-			/** online */
-			string status;
-		public:
-			/** [bool]可选,P2P是否加密,默认false-不支持即不加密;true-加密;特别说明:当前字段是理想定制项目独有新增字段 */
-			bool encryptP2P;
 		public:
 			/** 554 */
 			string rtspPort;

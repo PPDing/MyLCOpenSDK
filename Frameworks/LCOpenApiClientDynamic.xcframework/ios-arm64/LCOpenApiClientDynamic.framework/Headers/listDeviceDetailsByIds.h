@@ -4,8 +4,8 @@
  *  SHOULD NOT MODIFY!
  */
  
-#ifndef _LC_OPENAPI_CLIENT_ListDeviceDetailsByIds_H_
-#define _LC_OPENAPI_CLIENT_ListDeviceDetailsByIds_H_
+#ifndef _LC_OPENAPI_CLIENT_listDeviceDetailsByIds_H_
+#define _LC_OPENAPI_CLIENT_listDeviceDetailsByIds_H_
 
 #include "LCOpenApiDefine.h"
 #include "LCOpenApiRequest.h"
@@ -23,22 +23,22 @@ namespace Dahua{
 namespace LCOpenApi{
 	class MetaInfo;
 	using namespace std;
-	class ListDeviceDetailsByIdsRequest : public LCOpenApiRequest
+	class listDeviceDetailsByIdsRequest : public LCOpenApiRequest
 	{
 	public:
-		class ListDeviceDetailsByIdsRequestData
+		class listDeviceDetailsByIdsRequestData
 		{
 		public:
-			ListDeviceDetailsByIdsRequestData();
-			~ListDeviceDetailsByIdsRequestData();
+			listDeviceDetailsByIdsRequestData();
+			~listDeviceDetailsByIdsRequestData();
 			
 		public:
-			/** define a list with struct of ListDeviceDetailsByIdsRequestData_DeviceListElement */
-			class ListDeviceDetailsByIdsRequestData_DeviceListElement : public LCOpenApiBase
+			/** define a list with struct of listDeviceDetailsByIdsRequestData_DeviceListElement */
+			class listDeviceDetailsByIdsRequestData_DeviceListElement : public LCOpenApiBase
 			{
 			public:
-				ListDeviceDetailsByIdsRequestData_DeviceListElement();
-				~ListDeviceDetailsByIdsRequestData_DeviceListElement();
+				listDeviceDetailsByIdsRequestData_DeviceListElement();
+				~listDeviceDetailsByIdsRequestData_DeviceListElement();
 			public:
 				/** 通道编码 */
 				LCOpenApiVector<string> channelId;
@@ -47,47 +47,47 @@ namespace LCOpenApi{
 				string deviceId;
 			};
 		public:
-			LCOpenApiVector<ListDeviceDetailsByIdsRequestData_DeviceListElement> deviceList;
+			LCOpenApiVector<listDeviceDetailsByIdsRequestData_DeviceListElement> deviceList;
 		public:
 			/** 授权token(userToken或accessToken) */
 			string token;
 
 		};
 	public:
-		ListDeviceDetailsByIdsRequest();
-		~ListDeviceDetailsByIdsRequest();
+		listDeviceDetailsByIdsRequest();
+		~listDeviceDetailsByIdsRequest();
 	public:
 		virtual int build();
 		virtual LCOpenApiRequest* clone();
 	public:
-		ListDeviceDetailsByIdsRequestData data;
-		MetaInfo* _metainfo_ListDeviceDetailsByIdsRequestData;
+		listDeviceDetailsByIdsRequestData data;
+		MetaInfo* _metainfo_listDeviceDetailsByIdsRequestData;
 	};
 
 	
-	typedef ListDeviceDetailsByIdsRequest::ListDeviceDetailsByIdsRequestData ListDeviceDetailsByIdsRequestData;
-	typedef ListDeviceDetailsByIdsRequest::ListDeviceDetailsByIdsRequestData::ListDeviceDetailsByIdsRequestData_DeviceListElement ListDeviceDetailsByIdsRequestData_DeviceListElement;
+	typedef listDeviceDetailsByIdsRequest::listDeviceDetailsByIdsRequestData listDeviceDetailsByIdsRequestData;
+	typedef listDeviceDetailsByIdsRequest::listDeviceDetailsByIdsRequestData::listDeviceDetailsByIdsRequestData_DeviceListElement listDeviceDetailsByIdsRequestData_DeviceListElement;
 
 
-	class ListDeviceDetailsByIdsResponse : public LCOpenApiResponse
+	class listDeviceDetailsByIdsResponse : public LCOpenApiResponse
 	{
 	public:
-		class ListDeviceDetailsByIdsResponseData
+		class listDeviceDetailsByIdsResponseData
 		{
 		public:
-			ListDeviceDetailsByIdsResponseData();
-			~ListDeviceDetailsByIdsResponseData();
+			listDeviceDetailsByIdsResponseData();
+			~listDeviceDetailsByIdsResponseData();
 			
 		public:
 			/** [int]本次查询到的设备通道数 */
 			int count;
 		public:
-			/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement */
-			class ListDeviceDetailsByIdsResponseData_DeviceListElement : public LCOpenApiBase
+			/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement */
+			class listDeviceDetailsByIdsResponseData_DeviceListElement : public LCOpenApiBase
 			{
 			public:
-				ListDeviceDetailsByIdsResponseData_DeviceListElement();
-				~ListDeviceDetailsByIdsResponseData_DeviceListElement();
+				listDeviceDetailsByIdsResponseData_DeviceListElement();
+				~listDeviceDetailsByIdsResponseData_DeviceListElement();
 			public:
 				/** 设备来源，paas:来自大华，lc:来自乐橙 */
 				string sourceType;
@@ -101,12 +101,12 @@ namespace LCOpenApi{
 				/** 设备安全码 */
 				string deviceSafeCode;
 			public:
-				/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps */
-				class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps : public LCOpenApiBase
+				/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps */
+				class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps : public LCOpenApiBase
 				{
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps();
-					~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps();
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps();
+					~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps();
 				public:
 					/** [bool] */
 					bool SupDisarmLinkageAlarmBellEnable;
@@ -114,18 +114,18 @@ namespace LCOpenApi{
 					/** [bool]CMS相关配置 */
 					bool SupCMS;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct();
 					public:
 						/** [bool] */
 						bool Support;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct* SupSpeakerFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct* SupSpeakerFeatures;
 				public:
 					/** [bool]Led开关使能 */
 					bool SupDisableLed;
@@ -148,12 +148,12 @@ namespace LCOpenApi{
 					/** [bool]SIA相关配置 */
 					bool SupSIA;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct();
 					public:
 						/** [bool] */
 						bool UserNumber;
@@ -162,33 +162,33 @@ namespace LCOpenApi{
 						LCOpenApiVector<string> AuthorityList;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct* SupAlarmUserManagerFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct* SupAlarmUserManagerFeatures;
 				public:
 					/** [bool] */
 					bool SupLog;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct();
 					public:
 						/** [bool] */
 						bool SupPowerFaultDelay;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct* SupPowerFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct* SupPowerFeatures;
 				public:
 					/** [bool] */
 					bool SupDelayArming;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct();
 					public:
 						/** 支持多选报警类型 */
 						LCOpenApiVector<string> SupAlarmType;
@@ -200,7 +200,7 @@ namespace LCOpenApi{
 						bool SupGPSInfo;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct* SupTriggerAlarmFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct* SupTriggerAlarmFeatures;
 				public:
 					/** [bool] */
 					bool SupTriggerAlarm;
@@ -208,12 +208,12 @@ namespace LCOpenApi{
 					/** [bool] */
 					bool enable;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct();
 					public:
 						/** [int]最大功能个数 */
 						int MaxNum;
@@ -228,7 +228,7 @@ namespace LCOpenApi{
 						string MaxResolutions;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct* SupCameraFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct* SupCameraFeatures;
 				public:
 					/** [bool]临时停用功能 */
 					bool SupDisableSensor;
@@ -239,12 +239,12 @@ namespace LCOpenApi{
 					/** 支持的用户管理 */
 					LCOpenApiVector<string> SupUserManager;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct();
 					public:
 						/** [bool]是否支持设备语音语言 */
 						bool Support;
@@ -253,43 +253,43 @@ namespace LCOpenApi{
 						bool SupUpload;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct* SupVoiceFileFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct* SupVoiceFileFeatures;
 				public:
 					/** [bool]网络优先级功能 */
 					bool SupChangeNet;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct();
 					public:
 						/** [bool]是否支持多语言配置 */
 						bool Support;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct* SupMultiLanguageFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct* SupMultiLanguageFeatures;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct();
 					public:
 						/** [bool]WiFi相关配置 */
 						bool Enable;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct* SupWifi;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct* SupWifi;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct();
 					public:
 						/** [bool] */
 						bool EventVerification;
@@ -304,14 +304,14 @@ namespace LCOpenApi{
 						bool EventTypeList;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct* SupPrivateFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct* SupPrivateFeatures;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct();
 					public:
 						/** 支持短信格式选择 */
 						LCOpenApiVector<string> SupSMSFormat;
@@ -319,18 +319,18 @@ namespace LCOpenApi{
 						/** [bool] */
 						bool Support;
 					public:
-						/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct */
-						class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct : public LCOpenApiBase
+						/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct */
+						class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct : public LCOpenApiBase
 						{
 						public:
-							ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct();
-							~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct();
+							listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct();
+							~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct();
 						public:
 							/** [bool]是否支持报警联动电话配置 */
 							bool Support;
 						};
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct* SupCallLinkagePolicyFeatures;
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct* SupCallLinkagePolicyFeatures;
 					public:
 						/** [bool] */
 						bool SupPINCode;
@@ -345,7 +345,7 @@ namespace LCOpenApi{
 						bool SupAudioPlay;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct* SupMobileFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct* SupMobileFeatures;
 				public:
 					/** [int]能力集大版本 */
 					int FunctionVerison;
@@ -353,12 +353,12 @@ namespace LCOpenApi{
 					/** 支持的探测器类型 */
 					LCOpenApiVector<string> SupSensorType;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct();
 					public:
 						/** [bool] */
 						bool ManualTest;
@@ -388,7 +388,7 @@ namespace LCOpenApi{
 						bool RetransmissionDeadline;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct* SupSIAFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct* SupSIAFeatures;
 				public:
 					/** [bool] */
 					bool SupSIARetransmissionDeadline;
@@ -402,25 +402,25 @@ namespace LCOpenApi{
 					/** 版本号 */
 					string Version;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct();
 					public:
 						/** [bool]支持对讲功能 */
 						bool Support;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct* SupTalkbackFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct* SupTalkbackFeatures;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct();
 					public:
 						/** [bool]是否支持系统检查 */
 						bool Support;
@@ -429,7 +429,7 @@ namespace LCOpenApi{
 						bool ArmingWithFault;
 					};
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct* SupSystemStatusCheckFeatures;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct* SupSystemStatusCheckFeatures;
 				public:
 					/** 默认检测集合 */
 					LCOpenApiVector<string> SupFaultDetectionItems;
@@ -441,7 +441,7 @@ namespace LCOpenApi{
 					bool SupIndexInfo;
 				};
 			public:
-				ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps* caps;
+				listDeviceDetailsByIdsResponseData_DeviceListElement_Caps* caps;
 			public:
 				/** tls私有端口 */
 				string tlsPrivatePort;
@@ -464,22 +464,22 @@ namespace LCOpenApi{
 				/** [bool]是否支持tls */
 				bool tlsEnable;
 			public:
-				/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement */
-				class ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement : public LCOpenApiBase
+				/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement */
+				class listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement : public LCOpenApiBase
 				{
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement();
-					~ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement();
+					listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement();
+					~listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement();
 				public:
 					/** 云存储状态，notExist：未开通套餐，using：开通云存储且没有过期，expired：套餐过期 */
 					string csStatus;
 				public:
-					/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement */
-					class ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement : public LCOpenApiBase
+					/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement */
+					class listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement : public LCOpenApiBase
 					{
 					public:
-						ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement();
-						~ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement();
+						listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement();
+						~listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement();
 					public:
 						/** [int]码流类型 */
 						int streamType;
@@ -497,7 +497,7 @@ namespace LCOpenApi{
 						int imageSize;
 					};
 				public:
-					LCOpenApiVector<ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement> resolutions;
+					LCOpenApiVector<listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement> resolutions;
 				public:
 					/** 通道状态，online：在线，offline：离线，sleep：休眠，upgrading升级中 */
 					string channelStatus;
@@ -533,7 +533,7 @@ namespace LCOpenApi{
 					string lastOffLineTime;
 				};
 			public:
-				LCOpenApiVector<ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement> channelList;
+				LCOpenApiVector<listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement> channelList;
 			public:
 				/** p2p端口 */
 				string p2pPort;
@@ -586,12 +586,12 @@ namespace LCOpenApi{
 				/** 设备名称 */
 				string deviceName;
 			public:
-				/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement */
-				class ListDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement : public LCOpenApiBase
+				/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement */
+				class listDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement : public LCOpenApiBase
 				{
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement();
-					~ListDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement();
+					listDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement();
+					~listDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement();
 				public:
 					/** 配件id */
 					string apId;
@@ -603,17 +603,14 @@ namespace LCOpenApi{
 					string apName;
 				};
 			public:
-				LCOpenApiVector<ListDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement> aplist;
+				LCOpenApiVector<listDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement> aplist;
 			public:
-				/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages */
-				class ListDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages : public LCOpenApiBase
+				/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages */
+				class listDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages : public LCOpenApiBase
 				{
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages();
-					~ListDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages();
-				public:
-					/** 设备图片url */
-					string deviceManagerWiredAddDevice;
+					listDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages();
+					~listDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages();
 				public:
 					/** 设备图片url */
 					string commonList;
@@ -628,13 +625,10 @@ namespace LCOpenApi{
 					string messageList;
 				public:
 					/** 设备图片url */
-					string v2CommonList;
-				public:
-					/** 设备图片url */
 					string deviceManagerAddDevice;
 				};
 			public:
-				ListDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages* deviceModelImages;
+				listDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages* deviceModelImages;
 			public:
 				/** [int]是否强制升级 */
 				int isForcedUpgrade;
@@ -669,12 +663,12 @@ namespace LCOpenApi{
 				/** 盐值 */
 				string salt;
 			public:
-				/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement */
-				class ListDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement : public LCOpenApiBase
+				/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement */
+				class listDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement : public LCOpenApiBase
 				{
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement();
-					~ListDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement();
+					listDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement();
+					~listDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement();
 				public:
 					/** 集成电路卡识别码即SIM卡卡号 */
 					string iccid;
@@ -686,17 +680,17 @@ namespace LCOpenApi{
 					int type;
 				};
 			public:
-				LCOpenApiVector<ListDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement> simInfo;
+				LCOpenApiVector<listDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement> simInfo;
 			public:
 				/** [int]通道数量 */
 				int channelNum;
 			public:
-				/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement */
-				class ListDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement : public LCOpenApiBase
+				/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement */
+				class listDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement : public LCOpenApiBase
 				{
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement();
-					~ListDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement();
+					listDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement();
+					~listDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement();
 				public:
 					/** 码流类型 */
 					string streamType;
@@ -714,7 +708,7 @@ namespace LCOpenApi{
 					string imageSize;
 				};
 			public:
-				LCOpenApiVector<ListDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement> resolutions;
+				LCOpenApiVector<listDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement> resolutions;
 			public:
 				/** http私有协议拉流端口 */
 				string httpPort;
@@ -725,12 +719,12 @@ namespace LCOpenApi{
 				/** WiFi可转换模式，逗号隔开 */
 				string wifiTransferMode;
 			public:
-				/** define a list with struct of ListDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo */
-				class ListDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo : public LCOpenApiBase
+				/** define a list with struct of listDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo */
+				class listDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo : public LCOpenApiBase
 				{
 				public:
-					ListDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo();
-					~ListDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo();
+					listDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo();
+					~listDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo();
 				public:
 					/** 设备语音语言 */
 					string language;
@@ -739,7 +733,7 @@ namespace LCOpenApi{
 					string version;
 				};
 			public:
-				ListDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo* voiceFileInfo;
+				listDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo* voiceFileInfo;
 			public:
 				/** 设备用户名 */
 				string deviceUsername;
@@ -748,45 +742,45 @@ namespace LCOpenApi{
 				string deviceStatus;
 			};
 		public:
-			LCOpenApiVector<ListDeviceDetailsByIdsResponseData_DeviceListElement> deviceList;
+			LCOpenApiVector<listDeviceDetailsByIdsResponseData_DeviceListElement> deviceList;
 
 		};
 	public:
-		ListDeviceDetailsByIdsResponse();
-		~ListDeviceDetailsByIdsResponse();
+		listDeviceDetailsByIdsResponse();
+		~listDeviceDetailsByIdsResponse();
 	public:
 		virtual LCOpenApiResponse* clone();
 		virtual int parse();
 	public:
-		ListDeviceDetailsByIdsResponseData data;
-		MetaInfo* _metainfo_ListDeviceDetailsByIdsResponseData;
+		listDeviceDetailsByIdsResponseData data;
+		MetaInfo* _metainfo_listDeviceDetailsByIdsResponseData;
 	};
 
 	
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData ListDeviceDetailsByIdsResponseData;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement ListDeviceDetailsByIdsResponseData_DeviceListElement;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps::ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct ListDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement ListDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement ListDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages ListDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement ListDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement ListDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement;
-	typedef ListDeviceDetailsByIdsResponse::ListDeviceDetailsByIdsResponseData::ListDeviceDetailsByIdsResponseData_DeviceListElement::ListDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo ListDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData listDeviceDetailsByIdsResponseData;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement listDeviceDetailsByIdsResponseData_DeviceListElement;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps listDeviceDetailsByIdsResponseData_DeviceListElement_Caps;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSpeakerFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupAlarmUserManagerFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPowerFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTriggerAlarmFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupCameraFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupVoiceFileFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMultiLanguageFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupWifiStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupPrivateFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupMobileFeaturesStruct_SupCallLinkagePolicyFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSIAFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupTalkbackFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps::listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct listDeviceDetailsByIdsResponseData_DeviceListElement_Caps_SupSystemStatusCheckFeaturesStruct;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement listDeviceDetailsByIdsResponseData_DeviceListElement_ChannelListElement_ResolutionsElement;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement listDeviceDetailsByIdsResponseData_DeviceListElement_AplistElement;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages listDeviceDetailsByIdsResponseData_DeviceListElement_DeviceModelImages;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement listDeviceDetailsByIdsResponseData_DeviceListElement_SimInfoElement;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement listDeviceDetailsByIdsResponseData_DeviceListElement_ResolutionsElement;
+	typedef listDeviceDetailsByIdsResponse::listDeviceDetailsByIdsResponseData::listDeviceDetailsByIdsResponseData_DeviceListElement::listDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo listDeviceDetailsByIdsResponseData_DeviceListElement_VoiceFileInfo;
 
 }
 }

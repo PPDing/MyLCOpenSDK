@@ -10,7 +10,7 @@
 #ifndef DHNETSDKEX_H
 #define DHNETSDKEX_H
 
-#include "dhnetsdk.h"
+#include "netsdk.h"
 
 namespace CLOULD_SDK {
 

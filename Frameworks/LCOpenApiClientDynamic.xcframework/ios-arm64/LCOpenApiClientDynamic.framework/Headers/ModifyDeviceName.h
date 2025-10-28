@@ -33,17 +33,14 @@ namespace LCOpenApi{
 			~ModifyDeviceNameRequestData();
 			
 		public:
-			/** 待设置的名称 */
-			string name;
-		public:
-			/** [bool]是否透传设备，false不透传 */
-			bool setToDevice;
+			/** 授权token(userToken或accessToken) */
+			string token;
 		public:
 			/** 通道ID，留空表示设置设备 */
 			string channelId;
 		public:
-			/** 授权token(userToken或accessToken) */
-			string token;
+			/** 待设置的名称 */
+			string name;
 		public:
 			/** 设备ID */
 			string deviceId;

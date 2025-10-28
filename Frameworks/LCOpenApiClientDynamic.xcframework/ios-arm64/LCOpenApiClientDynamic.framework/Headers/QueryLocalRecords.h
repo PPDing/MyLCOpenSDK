@@ -97,41 +97,17 @@ namespace LCOpenApi{
 				QueryLocalRecordsResponseData_RecordsElement();
 				~QueryLocalRecordsResponseData_RecordsElement();
 			public:
-				/** 类型，Manual、Event、All */
-				string type;
-			public:
-				/**  */
-				string recordRegionId;
-			public:
-				/** [int]加密模式（0：默认加密模式；1：用户加密模式） */
-				int encryptMode;
-			public:
-				/** 录像文件名 */
-				string recordId;
-			public:
-				/** 过期时间 */
-				string expireTime;
-			public:
-				/** 加密秘钥 */
-				string encryptSecret;
-			public:
-				/** 设备ID */
-				string deviceId;
-			public:
 				/** 码流类型 main:主码流，extraX:辅码流，缺省按照默认查询 */
 				string streamType;
 			public:
-				/** 录像文件地址路径 */
-				string recordPath;
-			public:
-				/** 加密图片下载地址 */
-				string thumbUrl;
-			public:
-				/** 文件大小 */
-				string size;
+				/** 类型，Manual、Event、All */
+				string type;
 			public:
 				/** 结束时间，如2010-05-25 23:59:59 */
 				string endTime;
+			public:
+				/** 录像文件名 */
+				string recordId;
 			public:
 				/** 开始时间，如2010-05-25 00:00:00 */
 				string beginTime;

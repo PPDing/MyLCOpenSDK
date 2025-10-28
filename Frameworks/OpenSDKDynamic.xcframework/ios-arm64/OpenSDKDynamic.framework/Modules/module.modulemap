@@ -3,5 +3,4 @@ framework module OpenSDKDynamic {
 
   export *
   module * { export * }
-
 }
