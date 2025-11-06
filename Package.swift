@@ -1,54 +1,60 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.5
+// Auto-generated XCFramework Package
+// Generated on: 2025-11-06
+
 import PackageDescription
 
 let package = Package(
     name: "MyOpenSDK",
-    platforms: [
-        .iOS(.v11)
-    ],
+    platforms: [.iOS(.v11)],
     products: [
         .library(
             name: "MyOpenSDK",
             targets: [
-                "LCOpenApiClientDynamic",
-                "OpenSDKDynamic",
-                "RtspStreamFrameworkDynamicGeneral",
+                "BusinessFrameworkDynamicGeneral",
                 "DHHTTPStreamDynamicGeneral",
                 "HlsStreamFrameworkDynamicGeneral",
-                "NetConfig"
+                "LCOpenApiClientDynamic",
+                "NetConfig",
+                "OpenSDKDynamic",
+                "RtspStreamFrameworkDynamicGeneral",
+                "bluetoothconfig",
             ]
-        ),
+        )
     ],
-    dependencies: [],
     targets: [
+        // Dynamic Framework binary targets
         .binaryTarget(
-            name: "LCOpenApiClientDynamic",
-            path: "Frameworks/LCOpenApiClientDynamic.xcframework"
+            name: "BusinessFrameworkDynamicGeneral",
+            path: "XCFrameworks/BusinessFrameworkDynamicGeneral.xcframework"
         ),
-        
-        .binaryTarget(
-            name: "OpenSDKDynamic",
-            path: "Frameworks/OpenSDKDynamic.xcframework"
-        ),
-        
-        .binaryTarget(
-            name: "RtspStreamFrameworkDynamicGeneral",
-            path: "Frameworks/RtspStreamFrameworkDynamicGeneral.xcframework"
-        ),
-        
         .binaryTarget(
             name: "DHHTTPStreamDynamicGeneral",
-            path: "Frameworks/DHHTTPStreamDynamicGeneral.xcframework"
+            path: "XCFrameworks/DHHTTPStreamDynamicGeneral.xcframework"
         ),
-        
         .binaryTarget(
             name: "HlsStreamFrameworkDynamicGeneral",
-            path: "Frameworks/HlsStreamFrameworkDynamicGeneral.xcframework"
+            path: "XCFrameworks/HlsStreamFrameworkDynamicGeneral.xcframework"
         ),
-        
+        .binaryTarget(
+            name: "LCOpenApiClientDynamic",
+            path: "XCFrameworks/LCOpenApiClientDynamic.xcframework"
+        ),
         .binaryTarget(
             name: "NetConfig",
-            path: "Frameworks/NetConfig.xcframework"
-        )
+            path: "XCFrameworks/NetConfig.xcframework"
+        ),
+        .binaryTarget(
+            name: "OpenSDKDynamic",
+            path: "XCFrameworks/OpenSDKDynamic.xcframework"
+        ),
+        .binaryTarget(
+            name: "RtspStreamFrameworkDynamicGeneral",
+            path: "XCFrameworks/RtspStreamFrameworkDynamicGeneral.xcframework"
+        ),
+        .binaryTarget(
+            name: "bluetoothconfig",
+            path: "XCFrameworks/libbluetoothconfig.xcframework"
+        ),
     ]
 )

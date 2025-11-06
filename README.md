@@ -1,18 +1,17 @@
-LCOpenSDK is a tripartite library provided by Imou Open Platform to third-party developers. Developers can use the SDK to develop iOS applications. The APIs it includes are mainly the binding of Imou and Dahua devices, real-time preview, video playback, etc.
-  
-#### Installation with CocoaPods
+# XCFramework Package
 
-To integrate LCOpenSDK into your Xcode project using CocoaPods, specify it in your Podfile:
+Automatically generated XCFramework package for iOS.
 
-pod 'LCOpenSDK', '~> 3.12.08'
+## Generated Files
 
-#### Use configuration
-You need to add configuration information before use, otherwise an error will occur.   
+- **XCFrameworks/**: Contains all generated .xcframework files
+- **Package.swift**: Swift Package Manager configuration
+- **README.md**: This documentation
 
- * LCAddDeviceModule.xcodeproj
- * LCBaseModule.xcodeproj
+## Usage
 
-Build Settings -> Framework Search Paths
+Add this package to your Xcode project using Swift Package Manager.
 
-Add value "$(PODS_ROOT)/LCOpenSDK/Framework"
+## Generated on
 
+2025-11-06

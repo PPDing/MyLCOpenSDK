@@ -1,0 +1,6 @@
+framework module LCOpenApiClientDynamic {
+  umbrella header "LCOpenApiClientDynamic.h"
+  export *
+
+  module * { export * }
+}

@@ -1,6 +1,0 @@
-framework module OpenSDKDynamic {
-  umbrella header "OpenSDK_dynamic.h"
-
-  export *
-  module * { export * }
-}
