@@ -8,8 +8,8 @@
 #ifndef OpenSDK_LoginManager_h
 #define OpenSDK_LoginManager_h
 
-#import "OpenSDK_Define.h"
-#import "OpenSDK_Params.h"
+#import <OpenSDKDynamic/OpenSDK_Define.h>
+#import <OpenSDKDynamic/OpenSDK_Params.h>
 #import <Foundation/Foundation.h>
 
 @protocol OpenSDK_LoginManagerListener;

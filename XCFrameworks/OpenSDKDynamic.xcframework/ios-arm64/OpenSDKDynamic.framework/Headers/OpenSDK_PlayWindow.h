@@ -8,10 +8,10 @@
 #ifndef LCOpenSDK_OpenSDK_PlayWindow_h
 #define LCOpenSDK_OpenSDK_PlayWindow_h
 
-#import "OpenSDK_EventListener.h"
-#import "OpenSDK_Define.h"
-#import "OpenSDK_OSDInfo.h"
-#import "OpenSDK_Params.h"
+#import <OpenSDKDynamic/OpenSDK_EventListener.h>
+#import <OpenSDKDynamic/OpenSDK_Define.h>
+#import <OpenSDKDynamic/OpenSDK_OSDInfo.h>
+#import <OpenSDKDynamic/OpenSDK_Params.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

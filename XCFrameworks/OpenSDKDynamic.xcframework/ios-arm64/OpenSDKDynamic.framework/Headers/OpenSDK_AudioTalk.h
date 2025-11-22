@@ -8,9 +8,9 @@
 #ifndef LCOpenSDK_OpenSDK_AudioTalk_h
 #define LCOpenSDK_OpenSDK_AudioTalk_h
 
-#import "OpenSDK_TalkerListener.h"
-#import "OpenSDK_Define.h"
-#import "OpenSDK_Params.h"
+#import <OpenSDKDynamic/OpenSDK_TalkerListener.h>
+#import <OpenSDKDynamic/OpenSDK_Define.h>
+#import <OpenSDKDynamic/OpenSDK_Params.h>
 #import <Foundation/Foundation.h>
 
 /**
