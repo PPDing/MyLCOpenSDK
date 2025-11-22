@@ -8,8 +8,8 @@
 #ifndef LCOpenSDK_OpenSDK_Api_h
 #define LCOpenSDK_OpenSDK_Api_h
 
-#import <OpenSDKDynmaic/OpenSDK_Define.h>
-#import <OpenSDKDynmaic/OpenSDK_Params.h>
+#import <OpenSDKDynamic/OpenSDK_Define.h>
+#import <OpenSDKDynamic/OpenSDK_Params.h>
 #import <Foundation/Foundation.h>
 
 /**
